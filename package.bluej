@@ -2,6 +2,7 @@
 dependency1.from=Shop
 dependency1.to=Cargo
 dependency1.type=UsesDependency
+<<<<<<< HEAD
 dependency10.from=Town
 dependency10.to=Shop
 dependency10.type=UsesDependency
@@ -11,6 +12,11 @@ dependency11.type=UsesDependency
 dependency12.from=Town
 dependency12.to=Cargo
 dependency12.type=UsesDependency
+=======
+dependency10.from=Vertex
+dependency10.to=Edge
+dependency10.type=UsesDependency
+>>>>>>> origin/master
 dependency2.from=Shop
 dependency2.to=Location
 dependency2.type=UsesDependency
@@ -36,12 +42,16 @@ dependency9.from=Edge
 dependency9.to=Vertex
 dependency9.type=UsesDependency
 objectbench.height=76
-objectbench.width=1346
+objectbench.width=1342
 package.editor.height=571
-package.editor.width=1248
+package.editor.width=1244
 package.editor.x=-8
 package.editor.y=-8
+<<<<<<< HEAD
 package.numDependencies=12
+=======
+package.numDependencies=10
+>>>>>>> origin/master
 package.numTargets=10
 package.showExtends=true
 package.showUses=true

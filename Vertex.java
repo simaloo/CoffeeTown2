@@ -5,6 +5,7 @@
  * @Trisha Agarwal
  * @04/29/2017-01
  */
+import java.util.ArrayList;
 public class Vertex
 {
     // instance variables - replace the example below with your own
@@ -16,7 +17,7 @@ public class Vertex
      int ID;
     
     //Edges of the vertex
-     Edge[] e;
+     ArrayList<Edge> e;
 
    
 
