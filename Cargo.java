@@ -36,7 +36,4 @@ public class Cargo
         return( quantities.add(amount)); 
     }
     
-    /**
-     * A method that finds the smallest 
-     */
 }

@@ -88,4 +88,64 @@ public class Town
             }
         }
     }
+
+    public void addShopEdges()
+    {
+        for (int i = 0; i<shops.length; i++)
+        {
+            for (int j = i+1; j<shops.length; j++)
+            {
+                if (shops[i].location.getX()<50 && shops[i].location.getY()<50 && shops[j].location.getX()<50 && shops[j].location.getY()<50)
+                {
+                    shops[i].insertSorted(new Edge(shops[i], shops[j]));
+                    shops[j].insertSorted(new Edge(shops[j], shops[i]));
+                }
+                if (shops[i].location.getX()>50 && shops[i].location.getY()>50 && shops[j].location.getX()>50 && shops[j].location.getY()>50)
+                {
+                    shops[i].insertSorted(new Edge(shops[i], shops[j]));
+                    shops[j].insertSorted(new Edge(shops[j], shops[i]));
+                }
+                if (shops[i].location.getX()>50 && shops[i].location.getY()<50 && shops[j].location.getX()>50 && shops[j].location.getY()<50)
+                {
+                    shops[i].insertSorted(new Edge(shops[i], shops[j]));
+                    shops[j].insertSorted(new Edge(shops[j], shops[i]));
+                }
+                if (shops[i].location.getX()<50 && shops[i].location.getY()>50 && shops[j].location.getX()<50 && shops[j].location.getY()>50)
+                {
+                    shops[i].insertSorted(new Edge(shops[i], shops[j]));
+                    shops[j].insertSorted(new Edge(shops[j], shops[i]));
+                }
+            }
+        }
+    }
+    
+    public void addWarehouseEdges()
+    {
+        for (int i = 0; i<shops.length; i++)
+        {
+            for (int j = i+1; j<warehouses.length; j++)
+            {
+                if (shops[i].location.getX()<50 && shops[i].location.getY()<50 && warehouses[j].location.getX()<50 && warehouses[j].location.getY()<50)
+                {
+                    shops[i].insertSorted(new Edge(shops[i], warehouses[j]));
+                    warehouses[j].insertSorted(new Edge(warehouses[j], shops[i]));
+                }
+                if (shops[i].location.getX()>50 && shops[i].location.getY()>50 && warehouses[j].location.getX()>50 && warehouses[j].location.getY()>50)
+                {
+                    shops[i].insertSorted(new Edge(shops[i], warehouses[j]));
+                    warehouses[j].insertSorted(new Edge(shops[j], warehouses[i]));
+                }
+                if (shops[i].location.getX()>50 && shops[i].location.getY()<50 && warehouses[j].location.getX()>50 && warehouses[j].location.getY()<50)
+                {
+                    shops[i].insertSorted(new Edge(shops[i], warehouses[j]));
+                    warehouses[j].insertSorted(new Edge(shops[j], warehouses[i]));
+                }
+                if (shops[i].location.getX()<50 && shops[i].location.getY()>50 && warehouses[j].location.getX()<50 && warehouses[j].location.getY()>50)
+                {
+                    shops[i].insertSorted(new Edge(shops[i], warehouses[j]));
+                    warehouses[j].insertSorted(new Edge(shops[j], warehouses[i]));
+                }
+            }
+        }
+    }
 }

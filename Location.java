@@ -27,12 +27,15 @@ public class Location
         this.y=y;
     }
 
-    public int[] getLocation(){
+    public int getX(){
 
-        int [] location=new int[2];
-        location[0]=x;
-        location[1]=y;
-        return(location);
+        return x;
+
+    }
+    
+    public int getY(){
+
+        return y;
 
     }
 }

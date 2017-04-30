@@ -14,6 +14,7 @@ public class Shop extends Vertex
 
     //Cargo that the shop needs
     private Cargo order;
+    
 
     //Location of the shop
     //  private Location location;
