@@ -1,5 +1,3 @@
- 
-
 
 /**
  * Write a description of class Shop here.

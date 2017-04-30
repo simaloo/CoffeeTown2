@@ -1,5 +1,3 @@
- 
-
 
 /**
  * Keeps track of the location of the
