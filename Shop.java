@@ -10,14 +10,14 @@ public class Shop extends Vertex
     //Instance variables for the Shop
 
     //ID of the shop
- //   private int ID;
-    
+    //   private int ID;
+
     //Cargo that the shop needs
-    private Cargo c;
-    
+    private Cargo order;
+
     //Location of the shop
-  //  private Location location;
-    
+    //  private Location location;
+
     /**
      * Constructor for the Shop class that
      * initliases the Shop to a given location and Id.
@@ -26,23 +26,10 @@ public class Shop extends Vertex
      * @param int x coordinate
      * @param int y corrdinate
      */
-    public Shop(int ID, int x, int y){
-        
+    public Shop(int ID, int x, int y, Cargo o){
+
         this.ID=ID;
         location=new Location(x,y);
-        c=null;
+        order = o;
     }
-    
-    /**
-     * A method that inserts the cargo for the
-     * warehouse into the cargo object
-     */
-    public boolean insertCargo(int quant){
-        
-        return(c.insert(quant));
-        
-    }
-    
-    
-    
-  }
+}
