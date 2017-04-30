@@ -20,6 +20,8 @@ public class Vertex
      ArrayList<Edge> e;
 
    
-
+     public Vertex(){
+         e=new ArrayList<Edge>();
+        }
     
 }
